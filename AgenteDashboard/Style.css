@@ -50,7 +50,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
@@ -93,4 +93,71 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+
+.container {
+    position: absolute;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+span {
+    display: inline-block;
+}
+
+#profile-pic {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 2px solid #747171;
+}
+
+button {
+    display: block;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-group input{
+    width: 500px;
+	padding: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: 2px solid #333;
+    height: 25px;
 }
