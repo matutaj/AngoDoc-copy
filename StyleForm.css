@@ -135,14 +135,14 @@ margin: 10px 0;
     padding: 5px 0 0 0;
 
 }
-.container-certidao{
+.container-form{
     margin: 10px 0;
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-.container-certidao img{
+.container-form img{
     width: 400px;
 }
 /*---------------Rodapé------------------*/
