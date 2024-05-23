@@ -3,6 +3,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+
 }
 a{
     text-decoration: none;
@@ -63,7 +65,41 @@ hr{
     filter: blur(2px);
     border: 0.5px solid black;
 }
+
+
 /*Corpo(Formulário)*/
+/*---------------BI------------------*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.form-Bi{
+    display: flex;
+    flex-direction: column;
+   
+}
+.form-Bi div{
+    display: flex;
+    flex-direction: column;
+}
+.form-Bi input{
+	width: 500px;
+	padding: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: 1px solid #cdcf4e;
+    height: 30px;}
+
+.form-Bi label{
+font-size: 14px;
+margin: 10px 0;
+
+}
 /*---------------Rodapé------------------*/
 .fala-connosco{
     background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/Holding.jpeg);
