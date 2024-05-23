@@ -30,6 +30,7 @@ body.loaded{
 header{
     background-color: rgb(0, 0, 0,0.765);
     height: 60px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -115,12 +116,6 @@ section{
     color: white;
     background-size: cover;
 }
-#selectUser{
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/User.png);
-    background-size:cover;
-    color: rgb(255, 255, 255);
-}
-
 #selectAgent{
     background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/Agent.jpg);
     color: white;
@@ -204,10 +199,3 @@ padding: 20px;
     height: 50px;
 }
 /*-------------Cadastro---------------*/
-.linkCadastro{
-    text-decoration: underline;
-    padding: 5px;
-    margin: 3px;
-    border-radius: 4px;
-    color: white;
-}
