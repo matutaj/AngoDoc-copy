@@ -26,9 +26,27 @@
             <button id="logout">Sair</button>
         </header>
 
-        <section id="settings" class="section">
-            <p>Valide as solicitações dos usuários.</p>
-            <!-- Adicione mais conteúdo aqui -->
+        <section id="agents" class="section">
+            <h2>Gerenciamento de Solicitações</h2>
+        
+            <table id="agents-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>BI</th>
+                        <th>Data Agentamento</th>
+                        <th>Nome do Agente Certificado</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas de agentes serão inseridas aqui dinamicamente -->
+                </tbody>
+            </table>
+            
+            <!-- Formulário para Adicionar/Editar Agente -->
+            
         </section>
     </div>
 
