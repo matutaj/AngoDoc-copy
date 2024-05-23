@@ -78,6 +78,9 @@ hr{
     padding: 20px;
 
 }
+.form input{
+    border-radius: 10px;
+}
 .form-Bi{
     display: flex;
     flex-direction: column;
@@ -93,12 +96,54 @@ hr{
     font-size: 14px;
     margin-bottom: 5px;
     border: 1px solid #cdcf4e;
-    height: 30px;}
+    height: 30px;
+}
 
 .form-Bi label{
 font-size: 14px;
 margin: 10px 0;
 
+}
+.form-Passport{
+    display: flex;
+    flex-direction: column;
+}
+.form-Passport input{
+	width: 500px;
+	padding: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: 1px solid #cdcf4e;
+    height: 30px;
+}
+.form-Passport label{
+ padding: 5px 0 0 0;
+}
+.form-certidao{
+    display: flex;
+    flex-direction: column;
+}
+.form-certidao input{
+    width: 500px;
+	padding: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: 1px solid #cdcf4e;
+    height: 30px;
+}
+.form-certidao label{
+    padding: 5px 0 0 0;
+
+}
+.container-certidao{
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-certidao img{
+    width: 400px;
 }
 /*---------------Rodapé------------------*/
 .fala-connosco{
