@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Agente Certificado</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <p style="font-size: 25px; color: beige; margin-left: 20px;">Ango<span style="color: rgb(248, 214, 129);">Doc</span>
+
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="contaADM.html">Conta</a></li>
+                <li><a href="geralADM.html">Visão Geral</a></li>
+                <li><a href="agente.html">Agentes Certificados</a></li>
+                <li><a href="solicitacoesADM.html">Solicitações</a></li>
+                <li><a href="notificacoes.html">Notificações</a></li>
+            </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Agentes Certificados</h1>
+            <button id="logout">Sair</button>
+        </header>
+
+        <section id="settings" class="section">
+            <h2>Gerenciar agentes certificados</h2>
+            <p>Cadastre, edite ou elimine os agentes certificados.</p>
+            <!-- Adicione mais conteúdo aqui -->
+        </section>
+        <section id="agents" class="section">
+            <h2>Gerenciamento de Agentes</h2>
+            <button id="add-agent-btn">Adicionar Agente</button>
+            
+            <!-- Tabela de Agentes -->
+            <table id="agents-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Localização</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas de agentes serão inseridas aqui dinamicamente -->
+                </tbody>
+            </table>
+            
+            <!-- Formulário para Adicionar/Editar Agente -->
+            <div id="agent-form-container" class="form-container">
+                <h3 id="agent-form-title">Adicionar Agente</h3>
+                <form id="agent-form" action="#" method="post">
+                    <input type="hidden" id="agent-id" name="agent-id">
+                    
+                    <label for="agent-name">Nome:</label>
+                    <input type="text" id="agent-name" name="agent-name" required>
+                    
+                    <label for="agent-location">Localização:</label>
+                    <input type="text" id="agent-location" name="agent-location" required>
+                    
+                    <label for="agent-password">Palavra-passe:</label>
+                    <input type="password" id="agent-password" name="agent-password" required>
+                    
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="cancel-agent-btn">Cancelar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
