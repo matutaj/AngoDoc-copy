@@ -1,0 +1,213 @@
+/* Estilos gerais*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+button{
+    margin: 2px 2px 2px -2px;
+    background-color: rgb(251, 241, 108);
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 15px;
+    border-style: none;
+    background-color: none;
+}
+button a{
+    color: black;
+}
+body{
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+body.loaded{
+    opacity: 1;
+}
+/*---Cabeçalho-----*/
+header{
+    background-color: rgb(0, 0, 0,0.765);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+nav, ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav,ul,li{
+    border-radius: 6px;
+    color: white;
+    list-style: none;
+    margin: 0 23px;
+    padding: 7px;
+}
+li:hover{
+    background-color: rgb(248, 214, 129);
+    color: black;
+}
+hr{
+    filter: blur(2px);
+    border: 0.5px solid black;
+}
+/*Corpo*/
+section{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#initialFrase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+}
+.documentTipe div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+}
+.textDocumentTipe{
+    margin: 70px 0 0 0;
+    text-align: justify;
+}
+.selectDocument{
+    transition: transform 0.3s ease;
+    color: black;
+}
+.selectDocument:hover{
+    transform: scale(1.1);
+}
+#selectBI{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/HoldingBI.jpg);
+    background-size:cover;
+    color: rgb(255, 255, 255);
+}
+
+#selectPass{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/Passaporte.jpeg);
+    color: white;
+    background-size: cover;
+}
+#selectCert{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/Certidao.png);
+    color: white;
+    background-size: cover;
+}
+#selectUser{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/User.png);
+    background-size:cover;
+    color: rgb(255, 255, 255);
+}
+
+#selectAgent{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/Agent.jpg);
+    color: white;
+    background-size: cover;
+}
+#selectAdmin{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/Admin.jpg);
+    color: white;
+    background-size: cover;
+}
+.container-map{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(252, 251, 215);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+}
+.map-descrition{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 500px;
+}
+.map-descrition span{
+line-height: 40px;
+}
+.map-descrition p{
+text-align: justify;
+
+}
+.map img{
+    width: 800px;
+    height: 400px;
+}
+/*---------------Rodapé------------------*/
+.fala-connosco{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Imagens/Holding.jpeg);
+    height: 400px;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.fala-connosco div p{
+    width: 350px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 5px 0;
+
+}
+.fala-connosco div{
+    display: flex;
+    flex-direction: column;
+}
+.fala-connosco div input{
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    color: rgb(14, 13, 13);
+
+}
+.footer{
+padding: 20px;
+}
+.footer img{
+    width: 200px;
+    height: 40px;
+}
+#Migracao{
+    width: 50px;
+    height: 50px;
+}
+/*-------------Cadastro---------------*/
+.linkCadastro{
+    text-decoration: underline;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    color: white;
+}
