@@ -24,11 +24,6 @@
             <button id="logout">Sair</button>
         </header>
 
-        <section id="settings" class="section">
-            <h2>Relatórios</h2>
-            <p>Aqui você pode ver um resumo das atividades recentes.</p>
-            <!-- Adicione mais conteúdo aqui -->
-        </section>
         <h1>Revisão Geral</h1>
         <table id="dashboard-table">
             <thead>
