@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Agente Certificado</title>
     <link rel="stylesheet" href="Style.css">
-    <script src="Script.js" defer></script>
+    <script src="../ADMDashboard/Script.js" defer></script>
 </head>
 <body>
     <div class="sidebar">
@@ -46,16 +46,16 @@
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="agents-table-body">
                     <!-- Linhas de agentes serão inseridas aqui dinamicamente -->
                 </tbody>
             </table>
             
             <!-- Formulário para Adicionar/Editar Agente -->
-            <div id="agent-form-container" class="form-container">
+            <div id="agent-form-container" class="form-container" style="display: none;">
                 <h3 id="agent-form-title">Adicionar Agente</h3>
                 <form id="agent-form" action="../Controller/agente.php" method="post">
-                    <input type="hidden" id="agent-id" name="id_agente" required>
+                    <input type="hidden" id="agent-id" name="id_agente">
                     
                     <label for="agent-name">Nome:</label>
                     <input type="text" id="agent-name" name="nome" required>
@@ -67,7 +67,7 @@
                     <input type="password" id="agent-password" name="palavraPasse" required>
                     
                     <button type="submit">Salvar</button>
-                    <button type="button" id="cancel-agent-btn">Cancelar</button>
+                    <button type="button" onclick="hide(agent-form-container)">Cancelar</button>
                 </form>
             </div>
         </section>

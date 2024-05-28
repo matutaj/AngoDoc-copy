@@ -1,120 +1,42 @@
 // js/script.js
-/*
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>;
-document.getElementById('logout').addEventListener('click', function() {
-    alert('Você saiu do sistema.');
-    // Adicione a lógica de logout aqui
-});
-
-// Adicionar evento para mostrar formulário de adição de agente
-document.getElementById('add-agent-btn').addEventListener('click', function() {
-    document.getElementById('agent-form-container').style.display = 'flex';
-});
-
-// Adicionar evento para cancelar adição de agente
-document.getElementById('cancel-agent-btn').addEventListener('click', function() {
-    document.getElementById('agent-form-container').style.display = 'none';
-}); 
-*/
+import Swal from "sweetalert2";
 function show(event){
     document.getElementById(event).style.display='flex';
 }
-<<<<<<< HEAD
 function hide(event){
     document.getElementById(event).style.display='none';
 }
-=======
+document.getElementById('logout').addEventListener('click', function() {
+    Swal.fire({
+        icon:'info',
+        title:'Logout efetuado',
+        text:'Você saiu do dashboard',
+    });
+    window.location.href='../cadastro.php';
+});
+function populateAgentsTable() {
+    var agentsTableBody = document.getElementById('agents-table-body');
+    agentsTableBody.innerHTML = '';
 
-// Função para editar um agente existente
-function editAgent(button) {
-    const row = button.parentNode.parentNode;
-    const agentId = row.cells[0].innerText;
-    const agentName = row.cells[1].innerText;
-    const agentLocation = row.cells[2].innerText;
-
-    document.getElementById('agent-id').value = agentId;
-    document.getElementById('agent-name').value = agentName;
-    document.getElementById('agent-location').value = agentLocation;
-    document.getElementById('agent-password').value = '';
-
-    document.getElementById('agent-form-title').innerText = 'Editar Agente';
-    document.getElementById('agent-form-container').style.display = 'block';
-}
-
-// Função para atualizar um agente existente
-function updateAgent(id, name, location, password) {
-    const agentTable = document.getElementById('agents-table').getElementsByTagName('tbody')[0];
-    for (let i = 0; i < agentTable.rows.length; i++) {
-        if (agentTable.rows[i].cells[0].innerText === id) {
-            agentTable.rows[i].cells[1].innerText = name;
-            agentTable.rows[i].cells[2].innerText = location;
-            break;
-        }
+    if (typeof agentsData !== 'undefined' && agentsData.length > 0) {
+        agentsData.forEach(function(agent) {
+            var row = document.createElement('tr');
+            row.innerHTML = '<td>' + agent.id_agente + '</td>' +
+                            '<td>' + agent.nome + '</td>' +
+                            '<td>' + agent.localizacao + '</td>' +
+                            '<td><button onclick="editAgent(' + agent.id_agente + ')">Editar</button> ' +
+                            '<button onclick="deleteAgent(' + agent.id_agente + ')">Excluir</button></td>';
+            agentsTableBody.appendChild(row);
+        });
+    } else {
+        var row = document.createElement('tr');
+        row.innerHTML = '<td colspan="4">Nenhum agente encontrado</td>';
+        agentsTableBody.appendChild(row);
     }
 }
 
-// Função para excluir um agente
-function deleteAgent(button) {
-    const row = button.parentNode.parentNode;
-    row.remove();
-}
-/*----------------Revisão Geral-------------*/
-// Dados de exemplo para preencher a tabela (substitua com seus próprios dados)
-const data = [
-    { usuario: 'João', certidao: '123456', agente: 'Maria', estado: 'SP', data: '2024-05-01' },
-    { usuario: 'Ana', certidao: '654321', agente: 'Pedro', estado: 'RJ', data: '2024-05-15' },
-    { usuario: 'Carlos', certidao: '987654', agente: 'Mariana', estado: 'MG', data: '2024-05-30' }
-];
-
-// Função para preencher a tabela com os dados
-function populateTable() {
-    const tableBody = document.querySelector('#dashboard-table tbody');
-    data.forEach(item => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${item.usuario}</td>
-            <td>${item.certidao}</td>
-            <td>${item.agente}</td>
-            <td>${item.estado}</td>
-            <td>${item.data}</td>
-        `;
-        tableBody.appendChild(row);
-    });
-}
-
-// Chama a função para preencher a tabela quando a página carrega
-window.addEventListener('load', populateTable);
-
-
-
-
-document.getElementById('edit-btn').addEventListener('click', function() {
-    var profileInfo = document.getElementById('profile-info');
-    var editForm = document.getElementById('edit-form');
-
-    profileInfo.style.display = 'none';
-    editForm.style.display = 'block';
-
-    // Preencher campos do formulário de edição com as informações atuais
-    document.getElementById('edit-name').value = document.getElementById('name').textContent;
-    document.getElementById('edit-location').value = document.getElementById('location').textContent;
-    document.getElementById('edit-year').value = document.getElementById('year').textContent;
+// Chama a função para preencher a tabela quando a página for carregada
+document.addEventListener('DOMContentLoaded', function() {
+    populateAgentsTable();
 });
-
-document.getElementById('profile-edit-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
-
-    // Atualizar as informações do perfil com os novos valores
-    document.getElementById('name').textContent = document.getElementById('edit-name').value;
-    document.getElementById('location').textContent = document.getElementById('edit-location').value;
-    document.getElementById('year').textContent = document.getElementById('edit-year').value;
-
-    // Mostrar novamente o perfil e ocultar o formulário de edição
-    document.getElementById('profile-info').style.display = 'flex'; // Mostrar o perfil como flexbox novamente
-    document.getElementById('edit-form').style.display = 'none';
-
-
-    // Exibir mensagem de confirmação
-    alert("Perfil atualizado com sucesso!");
-});
->>>>>>> 6d8234572d473f7202eece6d43c76f66f429ca1c
