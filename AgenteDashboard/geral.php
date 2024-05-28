@@ -12,9 +12,9 @@
         <p style="font-size: 25px; color: beige; margin-left: 20px;">Ango<span style="color: rgb(248, 214, 129);">Doc</span>
             <h2>Agente Dashboard</h2>
         <ul>
-            <li><a href="conta.html">Conta</a></li>
-            <li><a href="geral.html">Visão Geral</a></li>
-            <li><a href="solicitacoes.html">Solicitações</a></li>
+            <li><a href="conta.php">Conta</a></li>
+            <li><a href="geral.php">Visão Geral</a></li>
+            <li><a href="solicitacoes.php">Solicitações</a></li>
         </ul>
     </div>
 

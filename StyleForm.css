@@ -69,7 +69,9 @@ hr{
 
 /*Corpo(Formulário)*/
 /*---------------BI------------------*/
-
+input{
+    border-color: #cdcf4e;
+}
 .form{
     display: flex;
     flex-direction: column;

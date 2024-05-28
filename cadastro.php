@@ -14,18 +14,18 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
+            <a href="index.php">
                 <p style="font-size: 30px; color: beige;">Ango<span style="color: rgb(248, 214, 129);">Doc</span>
                 </p>
             </a>
             <ul>
-                <a href="index.html">
+                <a href="index.php">
                     <li>Home</li>
                 </a>
-                <a href="index.html#selectBI">
+                <a href="index.php#selectBI">
                     <li>Documentos</li>
                 </a>
-                <a href="index.html#mapa">
+                <a href="index.php#mapa">
                     <li>Agentes Certificados</li>
                 </a>
             </ul>
@@ -34,15 +34,15 @@
 
             <form>
                 <div class="user-box">
-                    <input type="text" name="" required="">
+                    <input type="text" name="nome" required="">
                     <label>Nome do usuário</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="" required="">
+                    <input type="password" name="palavraPasse" required="">
                     <label>Palavra-passe</label>
                 </div>
                 <center>
-                    <a href="#">
+                    <a href="../Controller.cadastrarAgente.php">
                         Entrar
                         <span></span>
                     </a>

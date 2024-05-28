@@ -14,16 +14,16 @@
     <div id="overlay" class="transition" class="hiden">
         <header>
             <nav>
-                <a href="index.html">
+                <a href="index.php">
                     <p style="font-size: 30px; color: beige;">Ango<span style="color: rgb(248, 214, 129);">Doc</span>
                     </p>
                 </a>
                 <ul>
-                    <a href="index.html"><li>Home</li></a>
+                    <a href="index.php"><li>Home</li></a>
                    <a href="#selectBI"><li>Documentos</li></a>
                     <a href="#mapa">  <li>Agentes Certificados</li></a>
                 </ul>
-                <a href="cadastro.html"><img src="Imagens/adicionar-usuario.png" alt="" width="30px" height="30px"></a>
+                <a href="cadastro.php"><img src="Imagens/adicionar-usuario.png" alt="" width="30px" height="30px"></a>
             </nav>
         </header>
        
@@ -40,7 +40,7 @@
         </div>
     </section>
     <section class="documentTipe">
-        <a href="BI.html">
+        <a href="BI.php">
             <div class="selectDocument" id="selectBI">
                 <h2>Bilhete de identidade</h2>
                 <p class="textDocumentTipe"><b> Solicite um novo Bilhete de identidade ou actualize, de uma forma simples e rápido. Somos a melhor solução para si e para a sua família.</b></p>
@@ -48,7 +48,7 @@
 
             </div>
         </a>
-        <a href="passaporte.html">
+        <a href="passaporte.php">
             <div class="selectDocument" id="selectPass">
                 <h2>Passaporte</h2>
                 <p class="textDocumentTipe"><b> Solicite um novo Passaporte ou actualize,  de uma forma simples e rápido. Somos a melhor solução para si e para a sua família.</b></p>
@@ -56,7 +56,7 @@
 
             </div>
         </a>
-        <a href="certidao.html">
+        <a href="certidao.php">
             <div class="selectDocument" id="selectCert">
                 <h2>Certidão de Óbito</h2>
                 <p class="textDocumentTipe"><b> Solicite a emissão de uma certidão de óbito,  de uma forma simples e rápido. Somos a melhor solução para si e para a sua família.</b></p>

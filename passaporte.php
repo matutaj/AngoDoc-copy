@@ -13,12 +13,12 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
+            <a href="index.php">
                 <p style="font-size: 30px; color: beige;">Ango<span style="color: rgb(248, 214, 129);">Doc</span>
                 </p>
             </a>
             <ul>
-                <a href="index.html"><li>Home</li></a>
+                <a href="index.php"><li>Home</li></a>
             </ul>
         </nav>
     </header>
@@ -27,16 +27,28 @@
        <div class="container-form">
         <img src="Imagens/undraw_Learning_re_32qv.png" alt="">
 
-        <form action="" class="form-Passport">
-            <label for="#"> Nome Completo</label>
-            <input type="text" placeholder="Nome">
-           <label for="dataNasc">Data do Nascimento</label>
-            <input type="date" placeholder="Data do nascimentpo" id="dataNasc">
-         <label for="#"> Morada Atual</label>
-            <input type="text" placeholder="Residência">
+        <form action="Controller/submitPass.php" class="form-Bi" method="post">
+            <div>
+                <div>
+                    <label for="#"> Nome completo</label>
+                    <input type="text" placeholder="Nome" name="nome">
+                </div>
+               <div>
+                   <label for="dataNasc">Data do Nascimento</label>
+                   <input type="date" placeholder="Data do nascimento" id="dataNasc" name="dataNasc">            
+                </div>
+                <div class="genero" class="naturalidade">
+                    <label for="genero">Género</label>
+                    <input type="radio" name="genero" value="masculino">Masculino
+                    <input type="radio" name="genero" value="feminino">Feminino
+                </div>
             <div class=" Naturalidade">
+               <div>
+                   <label for="#"> Residência Atual</label>
+                   <input type="text" placeholder="Residência" name="morada">
+               </div>
                 <label for="Naturalidade"> Natural de:</label>
-                <select name="Naturalidade" id="Natural" required>
+                <select name="naturalidade" id="Natural" required>
                      <option value="Bengo" id="option"> Bengo</option>
                      <option value="Benguela" id="option"> Benguela</option>
                      <option value="Bie" id="option"> Bié</option>
@@ -56,14 +68,14 @@
                      <option value="Uige" id="option"> Uíge</option>
                      <option value="Zaire" id="option"> Zaire</option>
                 </select>
+                <label for="#"> Número da cédula</label>
+               <input type="text" placeholder="Número da cédula Pessoal" name="cedula">
+               <label for="#"> Nome Completo do Pai</label>    
+               <input type="text" placeholder=" Insere o Nome completo do Pai" name="nomePai">
+               <label for="#"> Nome Completo da Mãe</label>    
+               <input type="text" placeholder="Nome da Mãe" name="nomeMae">
              </div>
-             <label for="#"> Número de Passaporte</label>
-            <input type="text" placeholder="Número da cédula Pessoal">
-            <label for="#"> Nome completo do Pai</label>       
-            <input type="text" placeholder="Nome Completo">
-            <label for="#"> Nome completo da Mãe</label>        
-            <input type="text" placeholder="Nome">
-            <button> Submeter</button>
+             <button> Submeter</button>
         </form>
        </div>
         

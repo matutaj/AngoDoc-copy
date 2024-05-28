@@ -13,12 +13,12 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
+            <a href="index.php">
                 <p style="font-size: 30px; color: beige;">Ango<span style="color: rgb(248, 214, 129);">Doc</span>
                 </p>
             </a>
             <ul>
-                <a href="index.html"><li>Home</li></a>
+                <a href="index.php"><li>Home</li></a>
             </ul>
         </nav>
     </header>
@@ -27,20 +27,25 @@
         <h4>Insira os dados do malogrado</h4>
         <div  class="container-form">
             <img src="Imagens/undraw_Completed_m9ci.png" alt="">
-            <form action="" class="form-certidao">
+            <form action="Controller/submitCert.php" class="form-certidao" method="post">
                 <label for="#"> Insira o Nome completo</label>
-                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Nome" name="nome">
                 <label for="dataNasc">Data do Nascimento</label>
-                <input type="date" placeholder="Data do nascimentpo" id="dataNasc">
+                <input type="date" placeholder="Data do nascimentpo" id="dataNasc" name="dataNasc">
                 <label for="dataFale">Data do falecimento</label>
-                <input type="date" placeholder="Data do falecimento" id="dataFale">
+                <input type="date" placeholder="Data do falecimento" id="dataFale" name="dataFalecimento">
                 <label for="#">Nome Do Hospital</label>
-                <input type="text" placeholder="Hospital em que faleceu">
+                <input type="text" placeholder="Hospital em que faleceu" name="hospital">
                 <label for="#"> Nome do Cemitério</label>
-                <input type="text" placeholder="Cemitério">
+                <input type="text" placeholder="Cemitério" name="cemiterio">
+                <div class="genero" class="naturalidade">
+                        <label for="genero">Género</label>
+                        <input type="radio" name="genero" value="masculino">Masculino
+                        <input type="radio" name="genero" value="feminino">Feminino
+                </div>
                 <div class=" Naturalidade">
                     <label for="Naturalidade"> Natural de:</label>
-                    <select name="Naturalidade" id="Natural" required>
+                    <select id="Natural" name="naturalidade" required>
                          <option value="Bengo" id="option"> Bengo</option>
                          <option value="Benguela" id="option"> Benguela</option>
                          <option value="Bie" id="option"> Bié</option>
@@ -61,7 +66,7 @@
                          <option value="Zaire" id="option"> Zaire</option>
                     </select>
                  </div>
-                <input type="text" placeholder="Número da cédula Pessoal">
+                <input type="text" placeholder="Número da cédula Pessoal" name="cedula">
                  <button>Submeter</button>
             </form>
         </div>

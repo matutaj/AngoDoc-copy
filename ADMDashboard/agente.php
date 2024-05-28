@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Agente Certificado</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
 </head>
 <body>
     <div class="sidebar">
@@ -12,11 +13,11 @@
 
             <h2>Admin Dashboard</h2>
             <ul>
-                <li><a href="contaADM.html">Conta</a></li>
-                <li><a href="geralADM.html">Visão Geral</a></li>
-                <li><a href="agente.html">Agentes Certificados</a></li>
-                <li><a href="solicitacoesADM.html">Solicitações</a></li>
-                <li><a href="notificacoes.html">Notificações</a></li>
+                <li><a href="contaADM.php">Conta</a></li>
+                <li><a href="geralADM.php">Visão Geral</a></li>
+                <li><a href="agente.php">Agentes Certificados</a></li>
+                <li><a href="solicitacoesADM.php">Solicitações</a></li>
+                <li><a href="notificacoes.php">Notificações</a></li>
             </ul>
     </div>
 
@@ -33,7 +34,7 @@
         </section>
         <section id="agents" class="section">
             <h2>Gerenciamento de Agentes</h2>
-            <button id="add-agent-btn">Adicionar Agente</button>
+            <button id="add-agent-btn" onclick="show(agent-form-container)">Adicionar Agente</button>
             
             <!-- Tabela de Agentes -->
             <table id="agents-table">
@@ -53,17 +54,17 @@
             <!-- Formulário para Adicionar/Editar Agente -->
             <div id="agent-form-container" class="form-container">
                 <h3 id="agent-form-title">Adicionar Agente</h3>
-                <form id="agent-form" action="#" method="post">
-                    <input type="hidden" id="agent-id" name="agent-id">
+                <form id="agent-form" action="../Controller/agente.php" method="post">
+                    <input type="hidden" id="agent-id" name="id_agente" required>
                     
                     <label for="agent-name">Nome:</label>
-                    <input type="text" id="agent-name" name="agent-name" required>
+                    <input type="text" id="agent-name" name="nome" required>
                     
                     <label for="agent-location">Localização:</label>
-                    <input type="text" id="agent-location" name="agent-location" required>
+                    <input type="text" id="agent-location" name="localizacao" required>
                     
                     <label for="agent-password">Palavra-passe:</label>
-                    <input type="password" id="agent-password" name="agent-password" required>
+                    <input type="password" id="agent-password" name="palavraPasse" required>
                     
                     <button type="submit">Salvar</button>
                     <button type="button" id="cancel-agent-btn">Cancelar</button>
@@ -71,6 +72,5 @@
             </div>
         </section>
     </div>
-    <script src="Script.js"></script>
 </body>
 </html>

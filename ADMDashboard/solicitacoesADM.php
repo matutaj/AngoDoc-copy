@@ -12,11 +12,11 @@
 
             <h2>Admin Dashboard</h2>
             <ul>
-                <li><a href="contaADM.html">Conta</a></li>
-                <li><a href="geralADM.html">Visão Geral</a></li>
-                <li><a href="agente.html">Agentes Certificados</a></li>
-                <li><a href="solicitacoesADM.html">Solicitações</a></li>
-                <li><a href="notificacoes.html">Notificações</a></li>
+                <li><a href="contaADM.php">Conta</a></li>
+                <li><a href="geralADM.php">Visão Geral</a></li>
+                <li><a href="agente.php">Agentes Certificados</a></li>
+                <li><a href="solicitacoesADM.php">Solicitações</a></li>
+                <li><a href="notificacoes.php">Notificações</a></li>
             </ul>
     </div>
 
