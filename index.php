@@ -23,12 +23,17 @@
                    <a href="#selectBI"><li>Documentos</li></a>
                     <a href="#mapa">  <li>Agentes Certificados</li></a>
                 </ul>
-                <a href="cadastro.php"><img src="Imagens/adicionar-usuario.png" alt="" width="30px" height="30px"></a>
+                <a onclick="showOptions(formCadastro)" href="cadastro.php"><img src="Imagens/adicionar-usuario.png" alt="" width="30px" height="30px"></a>
             </nav>
         </header>
        
     </div>
     <hr>
+    <div id="formCadastro" style="display: none;">
+        <p>Escolha o perfil de login</p>
+        <a href="cadastroAgente.php">Agente certificado</a>
+        <a href="cadastroAdmin.php">Administrador</a>
+    </div>
     <section>
         <div id="initialFrase">
             <h1 style="font-size: 45px;">Solicite os seus documentos</h1>
@@ -82,8 +87,10 @@
                 Estamos aqui para garantir que você tenha a melhor experiência possível. Fale conosco e permita-nos ajudar você!</p>
         </div>
         <div>
-            <input type="text" placeholder="Fale conosco">
-            <button> Enviar</button>
+            <form action="Controller/mensagem.php">
+                <input type="text" placeholder="Fale conosco" name="texto">
+                <button> Enviar</button>
+            </form>
         </div>
     </section>
     <section class="footer">

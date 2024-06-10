@@ -1,7 +1,6 @@
 body{
     background: #212121;
 }
-
 .login-box {
     position: absolute;
     top: 50%;
@@ -50,7 +49,7 @@ body{
     font-size: 12px;
   }
   
-  .login-box form a {
+  .login-box form button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -64,7 +63,7 @@ body{
     letter-spacing: 4px
   }
   
-  .login-box a:hover {
+  .login-box button:hover {
     background: rgb(251, 241, 108);
     color: black;
     border-radius: 5px;
@@ -74,7 +73,7 @@ body{
                 0 0 100px rgb(251, 241, 108);
   }
   
-  .login-box a span {
+  .login-box button span {
     position: absolute;
     display: block;
   }
@@ -89,7 +88,7 @@ body{
     }
   }
   
-  .login-box a span:nth-child(1) {
+  .login-box button span:nth-child(1) {
     bottom: 2px;
     left: -100%;
     width: 100%;

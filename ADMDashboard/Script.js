@@ -1,16 +1,25 @@
-function show(eventId) {
-    document.getElementById(eventId).style.display = 'flex';
+const { default: Swal } = require("sweetalert2");
+src = 'https://cdn.jsdelivr.net/npm/sweetalert2@11';
+function showModal() {
+    document.getElementById('agentModal').style.display = "block";
 }
 
-function hide(eventId) {
-    document.getElementById(eventId).style.display = 'none';
+function closeModal() {
+    document.getElementById('agentModal').style.display = "none";
 }
-
-document.getElementById('logout').addEventListener('click', function() {
+function leave() {
     Swal.fire({
-        icon: 'info',
-        title: 'Logout efetuado',
-        text: 'Você saiu do dashboard',
+        title: 'Sair do perfil?',
+        text: "Deseja sair do perfil?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sim, sair',
+        cancelButtonText: 'Não'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '../index.php';
+        }
     });
-    window.location.href = '../cadastro.php';
-});
+}

@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 title: 'Resultado',
                 text: '$msg',
                 icon: '$msgType',
-                confirmButtonText: 'OK'
+                confirmButtonText: 'Continuar'
             }).then((result) => {
                 if (result.isConfirmed) {
                     window.location.href = '../ADMDashboard/agente.php';
@@ -33,4 +33,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 
-?> */
+?>

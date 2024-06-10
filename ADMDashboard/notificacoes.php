@@ -15,7 +15,9 @@
                 <li><a href="contaADM.php">Conta</a></li>
                 <li><a href="geralADM.php">Visão Geral</a></li>
                 <li><a href="agente.php">Agentes Certificados</a></li>
-                <li><a href="solicitacoesADM.php">Solicitações</a></li>
+                <li><a href="bilhetesADM.php">Bilhetes</a></li>
+                <li><a href="passaportesADM.php">Passaportes</a></li>
+                <li><a href="certidoesADM.php">Certidões</a></li>
                 <li><a href="notificacoes.php">Notificações</a></li>
             </ul>
     </div>

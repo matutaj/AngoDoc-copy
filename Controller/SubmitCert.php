@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $naturalidade = $_POST['naturalidade'];
     $cedula = $_POST['cedula'];
     $cemiterio = $_POST['cemiterio'];
-    $hospital = $_POST['naturalidade'];
+    $hospital = $_POST['hospital'];
 
     $stmt = $conn->prepare("INSERT INTO certidao (cedula, nome, dataNasc, dataFalecimento, genero, Naturalidade, hospital,cemiterio) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("isssssss", $cedula, $nome, $dataNasc, $dataFalecimento, $genero, $naturalidade, $hospital,$cemiterio);
