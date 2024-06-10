@@ -145,6 +145,7 @@ form button:hover {
 form #cancel-agent-btn {
     background-color: #f44336;
     margin-top: 10px;
+    color: rgb(247, 207, 8);
 }
 
 form #cancel-agent-btn:hover {
@@ -216,4 +217,5 @@ button:hover {
     margin-bottom: 5px;
     border: 2px solid #333;
     height: 25px;
+
 }
